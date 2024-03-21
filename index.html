@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthe Language | Umandanify & Deumandanify</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./theme-switcher.js"></script>
+    <script src='./convert.js'></script>
+</head>
+
+<body onload="checkTheme()">
+    <nav class="shadow-xl navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Muthe Lang</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+
+                <select onchange="changeTheme(this)" class="theme select w-full px-7">
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
+                    <!-- add this corporate, retro, cyberpunk, synthwave, luxury, acid, aqua, halloween, night, coffee, black -->
+                    <option value="corporate">corporate</option>
+                    <option value="retro">retro</option>
+                    <option value="cyberpunk">cyberpunk</option>
+                    <option value="synthwave">synthwave</option>
+                    <option value="luxury">luxury</option>
+                    <option value="acid">acid</option>
+                    <option value="aqua">aqua</option>
+                    <option value="halloween">halloween</option>
+                    <option value="night">night</option>
+                    <option value="coffee">coffee</option>
+
+                </select>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="mt-10 container mx-auto max-w-2xl">
+            <div class="text-center font-bold">
+                <h2 class="text-helper"></h2>
+                <button onclick="toggleLang()" class="mt-6 btn btn-sm btn-primary btn-wide">Tukar</button>
+            </div>
+            <div class="boxtext flex flex-col p-6 gap-4">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
